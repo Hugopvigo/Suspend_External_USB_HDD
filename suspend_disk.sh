@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ruta del archivo de log
+LOG_FILE="/var/log/suspend_disks.log"
+
 # Configura el tiempo de espera para suspensión (en minutos, traducido a hdparm -S)
 SPINDOWN_TIME=240  # 20 minutos de inactividad
 
