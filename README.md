@@ -7,7 +7,7 @@ Algunos discos duros externos de WesternDigital no entran en suspensión automá
 Para resolver este problema y que no estén activos de forma permanente descarga el script en el directorio que desees y dale permisos de ejecución
 
 Guarda este script actualizado como suspend_disks.sh.
-chmod +x suspend_disks.sh
+`chmod +x suspend_disks.sh`
 
 ## Ejecución ##
 
@@ -25,7 +25,7 @@ Forzar suspensión solo cuando sea necesario:
 
 Si el estado es ambiguo pero no STANDBY, el script fuerza la suspensión.
 
-El método más confiable para detectar y gestionar discos en tu caso parece ser smartctl en combinación con hdparm -y
+El método más confiable para detectar y gestionar discos en tu caso parece ser **smartctl** en combinación con **hdparm -y**
 
 `sudo hdparm -y /dev/sdb`
 
@@ -45,12 +45,12 @@ Si está activo:
 
 ### Revisa el estado de los discos: ###
 
-`sudo smartctl -n standby /dev/sda
-sudo smartctl -n standby /dev/sdb
-sudo smartctl -n standby /dev/sdc`
+`sudo smartctl -n standby /dev/sda`
+`sudo smartctl -n standby /dev/sdb`
+`sudo smartctl -n standby /dev/sdc`
 
 Si los discos todavía no entran en STANDBY, verifica manualmente si hdparm -y funciona:
 
-`sudo hdparm -y /dev/sda
-sudo hdparm -y /dev/sdb
-sudo hdparm -y /dev/sdc`
+`sudo hdparm -y /dev/sda`
+`sudo hdparm -y /dev/sdb`
+`sudo hdparm -y /dev/sdc`
