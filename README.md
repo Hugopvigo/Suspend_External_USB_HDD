@@ -54,3 +54,12 @@ Si los discos todavía no entran en STANDBY, verifica manualmente si hdparm -y f
 `sudo hdparm -y /dev/sda`
 `sudo hdparm -y /dev/sdb`
 `sudo hdparm -y /dev/sdc`
+
+## Crontab ##
+
+Para verificar que los discos una vez se activan, vuelven a suspenderse, puedes configurar el crontab para que ejecute el script cada X tiempo.
+
+En mi caso 50 minutos (ver el fichero crontab)
+
+Para editarlo:
+`sudo crontab -e`
