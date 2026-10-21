@@ -1,3 +1,7 @@
+<meta property="og:title" content="SUSPEND EXTERNAL USB HDD">
+<meta property="og:description" content="Un script de Bash para suspender los discos USB que no se apagan solos.">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hugopvigo/Suspend_External_USB_HDD/main/docs/capturas/og.png">
+
 <p align="center">
   <img src="docs/capturas/00-cabecera.png" alt="Suspend External USB HDD — script para suspender discos USB en Linux" width="100%">
 </p>
